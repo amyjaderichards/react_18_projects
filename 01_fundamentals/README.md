@@ -39,7 +39,7 @@
 - toggle sidebar CMD + B
 - shortcuts settings/keyboard shortcuts
 
-#### First Component
+#### First Component ✅
 
 ```js
 function Greeting() {
@@ -55,9 +55,8 @@ const Greeting = () => {
 
 - starts with capital letter
 - must return JSX (html)
-- always close tag <Greeting/>
 
-##### Typical Component
+##### Typical Component ✅
 
 ```js
 // imports or logic
@@ -68,7 +67,7 @@ const Greeting = () => {
 export default Greeting;
 ```
 
-##### Root Component (only one)
+##### Root Component (only one) ✅
 
 index.js
 
@@ -85,20 +84,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Greeting />);
 ```
 
-#### Possible Bug
-
-If for some reason you still have this error in the terminal
-
-```
-Module not found: Error: Can't resolve 'path/index.js'
-```
-
-Just restart the server
-
-- CTRL + C (stop the server)
-- "npm start" (start the dev server)
-
-#### Extensions and settings.json
+#### Extensions and settings.json ✅
 
 - Auto Rename Tag
 - Highlight Matching Tag
@@ -136,10 +122,10 @@ settings.json
     - uncheck
     - React Snippets › Settings: Import React On Top
 
-#### First Component in Detail
+#### First Component in Detail ✅
 
-- capital letter
-- must return something
+- Capital letter
+- Must return something
 - JSX syntax (return html)
   - to make our lives easier
   - calling function under the hood
@@ -170,12 +156,11 @@ const Greeting = () => {
 };
 ```
 
-#### JSX Rules
+#### JSX Rules ✅
 
 - return single element (one parent element)
-
   - semantics section/article
-  - Fragment - let's us group elements without adding extra nodes
+  - Fragment - let's us group elements without adding extra nodes e.g. instead of wrapping in an outer div
 
 ```js
 return <React.Fragment>...rest of the return</React.Fragment>;
@@ -239,7 +224,7 @@ function Greeting() {
 }
 ```
 
-#### Nest Components
+#### Nested Components ✅
 
 ```js
 function Greeting() {
@@ -257,7 +242,7 @@ const Message = () => {
 };
 ```
 
-#### React Developer Tools
+#### React Developer Tools ✅
 
 - top right corner
 - more tools/extensions
